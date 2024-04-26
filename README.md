@@ -9,3 +9,27 @@ z detekovaných signálů akustické emise (AE)
 
 Popis pro  na  webu [GAMS](https://gams.fjfi.cvut.cz/drill-challange)
 
+#### Co je Akustická Emise
+Akustická emise (AE) je jev, při kterém se do materiálu uvolňují elastické napěťové vlny o frekvencích
+v řádu až MHz, tedy daleko nad slyšitelnou částí frekvenčního spektra. Po dosažení povrchu tělesa
+lze tyto vlny měřit piezoelektrickými snímači a detekovat tak např. mikroskopický růst trhlin (únava
+materiálu), netěsnost tlakových nádob (jaderných či chemických reaktorů), tření v ložiscích
+a převodových ústrojích apod. Pokud má AE charakter příliš častých pulzů, které splývají v signál
+podobný spíše šumu, mluvíme o spojité AE. Jedním z příkladů vzniku ultrazvukových vln
+v materiálech jsou i procesy obrábění kovů nebo vrtání, což je případ této výzvy.
+#### Měřící set-up (Ústav termomechaniky AV ČR, v.v.i., M. Chlada):
+Měření bylo provedeno USB osciloskopem Handyscope HS6 DIFF, výrobce TiePie, za pomocí tří typů
+snímačů AE: dva s korundovou keramickou styčnou plochou, jeden magnetický s poniklovanou
+styčnou plochou a jeden s ocelovou styčnou plochou. Každý typ snímače má jinou frekvenční
+charakteristiku neboli citlivost na různé frekvence obsažené ve snímaných akustických vlnách,
+způsobenou svou konstrukcí. Vrtačkou Bosch, upevněnou ve stojanu pro zajištění konstantního
+přítlaku a otáček, bylo vrtáno do ocelové desky o rozměrech 70 x 93 x 10 mm. Měřící aparatura
+snímala se vzorkovací frekvencí 3,125 MHz na všech čtyřech vstupních kanálech.
+#### RAW data (ÚT AVČR, v.v.i., M. Chlada):
+Bylo provedeno 5 sad měření spojité AE, mezi kterými byl vrták uměle otupen za použití brusného
+kamene. Tupost vrtáku ovlivňuje charakter AE v důsledku odkrajování tenkých vrstev materiálu
+a třením styčných ploch. V každé sadě měření bylo vrtáno do děr 1 až 5 pro každou z 5 úrovní
+otupení vrtáku po dobu přibližně 5 sekund. Z každého signálu byla vyříznuta čtyřsekundová střední
+část souvislého vrtání na 4 kanálech odpovídajících 4 snímačům AE. Délka jednoho signálu je 12,5
+milionu hodnot (vzorků).
+
