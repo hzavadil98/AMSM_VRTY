@@ -27,10 +27,10 @@ Bylo provedeno 5 sad měření spojité AE, mezi kterými byl vrták uměle otup
 #### Struktura dat signálů ke klasifikaci (KM FJFI, Jan Zavadil):
 Náhodný výběr podúseků z každého signálu o délce 6000 vzorků - dostatečně dlouhé úseky pro zachycení charakteristiky signálu, zároveň dostatečně krátké pro rozumnou výpočetní dobu současných ML/AI algoritmů. Pro každou úroveň tuposti vrtáku ze signálu příslušejícího každé díře vybráno náhodně 500 podúseků. Celkem je tedy k dispozici pro každou z pěti úrovní otupení vrtáku 2500 výseků akustických signálů o délce 6000 vzorků, každý z nichž má 4 kanály příslušející čtyřem AE snímačům. Pro snížení výpočetních nároků a zjednodušení úlohy je pro soutěž použit pouze jeden kanál příslušící prvnímu snímači. 
 
-#### Úkol pro klasifikaci tupostí vrtáku:
-90% signálů, tzn. 11250 výseků signálů, se známým původem, vybaveny ‚labely‘ označujícími stupeň tuposti 0 až 4 (0-zcela nový až 4-nejvíce otupený vrták). V souboru *VRTY_student-pkl* je jak trénovací dataset s příslušnými labely tak evaluační dataset, jehož labely máte za úkol predikovat. Připnutý jupyter notebook na Google Colab je k dispozici pro načtení dat, případně i pro jejich zpracování.
+#### Úkol pro klasifikaci tupostí vrtáku(KM FJFI,  J. Zavadil, V. Kůs):
+Předkládáme celý dataset, je na každém, zda využije všechny výseky signálů nebo si zvolí ke klasifikaci jen jeden či dva vybrané kanály ze snímačů AE1 až AE4. V následujícím souboru je tedy ke stažení 90% výseků signálů se známým původem, které jsou vybaveny ‚labely‘ označujícími stupeň tuposti 0 až 4 (0=zcela nový až 4=nejvíce otupený vrták). 10% signálů (eval_data) pochází z neznámých tupostí vrtáku a úkolem je přiřadit je co nejlépe skutečným tupostem 0 až 4.
 
 #### Způsoby hodnocení kvality klasifikace: 
-Ze zaslaného vektoru predikovaných tříd pro data z *eval_data* bude spočtena přesnost (accuracy) vaší predikce, podle které budou seřazeny výsledky. 
+Ze zaslaného vektoru predikovaných tříd pro data z *eval_data* bude spočtena přesnost (accuracy) vaší predikce, podle které budou seřazeny výsledky. Vaší klasifikaci zašlete prosím na adresu kusvacla@fjfi.cvut.cz.
 
 
